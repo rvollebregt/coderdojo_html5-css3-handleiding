@@ -8,8 +8,8 @@ Inhoudsopgave
 
 * [Voorwoord](#voorwoord)
 
-HTML5
------
+## HTML5
+
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. [Basis structuur](#basis-structuur)
 * [Teksten](#teksten)
@@ -23,8 +23,8 @@ HTML5
 * HTML5 elementen
 * Referentie
 
-CSS3
------
+## CSS3
+
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. Basis
 * Classes & ID's
@@ -36,8 +36,7 @@ CSS3
 * Basis effecten & animaties
 
 
-Opdrachten
------
+## Opdrachten
 <!-- TODO Toevoegen van links naar de juiste headings -->
 * [Opdracht 1](#opdracht1): Maak een lijst met links naar je favoriete pagina's   
   * <sub>Hoofdstukken 1 t/m 3 van HTML</sub>
@@ -58,7 +57,7 @@ Links met extra informatie
 * Referentie voor CSS eigenschappen: http://83.96.174.175/referentie/css/
 
 
-Voorwoord <a name="voorwoord"></a>
+<a name="voorwoord"></a> Voorwoord
 ======
 
 Welkom bij deze basis tutorial voor het leren van HTML & CSS. Deze tutorial is speciaal geschreven voor gebruik bij CoderDojo's.
@@ -67,7 +66,7 @@ Voel je vrij om stukken over te nemen, uit te breiden en/of te verbeteren.
 Veel plezier met het leren van HTML & CSS!
 
 
-Basis structuur <a name="basis-structuur"></a>
+<a name="basis-structuur"></a> Basis structuur
 ======
 
 ### Wat is HTML?
@@ -95,7 +94,7 @@ Allereerst moeten we aangeven dat het om een HTML pagina gaat. Dit doe je met de
 __Korte opdracht:__
 Neem deze HTML structuur over in je tekst editor en verander daarna de titel en de tekst van de webpagina. Sla daarna het bestand op als een .html bestand en open deze in je browser. Als je extra uitleg nodig hebt, kun je een van de coaches aanspreken.
 
-Teksten <a name="teksten"></a>
+<a name="teksten"></a> Teksten
 ======
 
 TODO
