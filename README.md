@@ -114,10 +114,10 @@ Met __heading__ elementen kan je een kopregel toevoegen. Deze worden gebruikt vo
 `<strong>Dit is een belangrijke vetgedrukte zin</strong>`
 
 #### Cursief
-`<i>Dit is een cursief gedrukte zin</i>`
+`<i>Dit is een cursief gedrukte zin</i>`  
 `<em>Dit is een belangrijke cursief gedrukte zin</em>`
 
 Om stukken tekst vetgedrukt of cursief te maken, kun je hier de bovenstaande tags omheen zetten. Er is een verschil tussen de twee soorten. Hier kan je meer over vinden in het hoofdstuk over Semantiek.
 
 __Korte opdracht:__
-Zoek op internet een 'Lorem Ipsum' generator (en als je wilt de oorsprong van deze tekst). Voeg 2 paragrafen van deze tekst toe aan je eigen webpagina en maak een aantal stukken cursief en vetgedrukt. Zorg er daarna voor dat elke paragraaf erboven een kopregel krijgt in verschillende groottes.
+Zoek op internet een 'Lorem Ipsum' generator (en als je wilt de oorsprong van deze tekst). Voeg 2 paragrafen van deze tekst toe aan je eigen webpagina en maak een aantal stukken <em>cursief</em> en <strong>vetgedrukt</strong>. Zorg er daarna voor dat elke paragraaf erboven een kopregel krijgt in verschillende groottes.
