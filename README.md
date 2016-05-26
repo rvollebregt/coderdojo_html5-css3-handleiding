@@ -97,4 +97,27 @@ Neem deze HTML structuur over in je tekst editor en verander daarna de titel en 
 <a name="teksten"></a> Teksten
 ======
 
-TODO
+In dit hoofdstuk bespreken we kort de verschillende elementen die zijn te gebruiken voor het plaatsen van teksten. Hieronder volgt een korte opsomming van de verschillende tags met een voorbeeld en wat je met het element kan doen.
+
+#### Paragraaf
+`<p>Dit is een paragraaf</p>`
+
+Met het paragraaf element kan je netjes een stuk tekst invoegen. Binnen deze paragraaf kan je ook andere elementen toevoegen om bijvoorbeeld een stukje van de tekst vetgedrukt of cursief te maken.
+
+#### Kopregels
+`<h1>Dit is een kopregel</h1>`
+
+Met __heading__ elementen kan je een kopregel toevoegen. Deze worden gebruikt voor het toevoegen van een titel aan je tekst. Deze komen bijvoorbeeld boven een paragraaf te staan. Er zijn 6 verschillende heading elementen, namelijk van `<h1></h1>` t/m `<h6></h6>`. Deze verschillen (standaard) in grootte, waar `<h1>` het grootst is en `<h6>` het kleinst.
+
+#### Vet gedrukt
+`<b>Dit is een vetgedrukte zin</b>`  
+`<strong>Dit is een belangrijke vetgedrukte zin</strong>`
+
+#### Cursief
+`<i>Dit is een cursief gedrukte zin</i>`
+`<em>Dit is een belangrijke cursief gedrukte zin</em>`
+
+Om stukken tekst vetgedrukt of cursief te maken, kun je hier de bovenstaande tags omheen zetten. Er is een verschil tussen de twee soorten. Hier kan je meer over vinden in het hoofdstuk over Semantiek.
+
+__Korte opdracht:__
+Zoek op internet een 'Lorem Ipsum' generator (en als je wilt de oorsprong van deze tekst). Voeg 2 paragrafen van deze tekst toe aan je eigen webpagina en maak een aantal stukken cursief en vetgedrukt. Zorg er daarna voor dat elke paragraaf erboven een kopregel krijgt in verschillende groottes.
