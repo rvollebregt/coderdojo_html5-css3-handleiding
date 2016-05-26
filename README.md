@@ -14,7 +14,7 @@ Inhoudsopgave
 1. [Basis structuur](#basis-structuur)
 * [Teksten](#teksten)
 * [Lijsten](#lijsten)
-* Links & knoppen
+* [Links](#links)
 * Plaatjes
 * Tabellen
 * Formulieren
@@ -146,3 +146,22 @@ Tussen deze lijst elementen worden altijd de __list items__ `<li></li>` geplaats
 
 __Korte opdracht:__
 Maak een eigen lijst op je webpagina. Je kunt bijvoorbeeld een opsomming maken van al je verschillende spellen of films die je thuis hebt. Zorg dat je favoriete lijst items goed te zien zijn door de tekst bijvoorbeeld vetgedrukt of cursief te maken.
+
+<a name="links"></a> Links
+======
+
+Op je pagina is het natuurlijk leuk als je naar andere websites of één van je andere pagina's kan verwijzen. Dit kunnen we doen met links of knoppen.
+Een link kunnen we maken door het `<a></a>` element te gebruiken (`<a>` is een afkorting voor anchor).
+
+Om een link te maken kunnen we een stuk tekst omringen met deze tags. Alleen moeten we ook aan deze tag kunnen vertellen waar de link naar toe moet verwijzen. Om dat voor elkaar te krijgen kunnen we een eigenschap toevoegen aan de openende tag. Dit heet een __attribute__. Voor deze tag gaan we het __href__ attribuut gebruiken. Dat ziet er zo uit:
+
+`<a href="http://www.google.com">Dit is een link naar Google</a>`
+
+We gebruiken de volgende manier om een attribuut toe te voegen:
+
+`href="http://jouwwebsitehier.nl"`
+
+Deze manier geldt voor het toevoegen van alle beschikbare attributen. Vaak hebben HTML elementen meerdere attributen die je kan gebruiken. Welke eigenschappen je kan gebruiken is afhankelijk van het HTML element. De attributen staan altijd in de openings-tag. Het is ook mogelijk om meerdere attributen toe te voegen per tag.
+
+__Korte opdracht:__
+Voeg in je tekst een link toe naar een website die je vaak bezoekt. Zoek ook op internet op waar de __target__ attribuut voor is bij de `<a>` tag en voeg deze op de juiste manier toe aan je link.
