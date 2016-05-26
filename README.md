@@ -13,7 +13,7 @@ Inhoudsopgave
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. [Basis structuur](#basis-structuur)
 * [Teksten](#teksten)
-* Lijsten
+* [Lijsten](#lijsten)
 * Links & knoppen
 * Plaatjes
 * Tabellen
@@ -39,11 +39,11 @@ Inhoudsopgave
 ## Opdrachten
 <!-- TODO Toevoegen van links naar de juiste headings -->
 * [Opdracht 1](#opdracht1): Maak een lijst met links naar je favoriete pagina's   
-  * <sub>Hoofdstukken 1 t/m 3 van HTML</sub>
+  * <sub>Hoofdstukken 1 t/m 4 van HTML</sub>
 
 
 * [Opdracht 2](#opdracht2): Maak een tabel die de Eredivisie statistieken toont
-  * <sub>Hoofdstuk 4 t/m 6 van HTML</sub>
+  * <sub>Hoofdstuk 5 & 6 van HTML</sub>
 
 
 * Opdracht ?: Maak een menu die openklapt
@@ -121,3 +121,28 @@ Om stukken tekst vetgedrukt of cursief te maken, kun je hier de bovenstaande tag
 
 __Korte opdracht:__
 Zoek op internet een 'Lorem Ipsum' generator (en als je wilt de oorsprong van deze tekst). Voeg 2 paragrafen van deze tekst toe aan je eigen webpagina en maak een aantal stukken <em>cursief</em> en <strong>vetgedrukt</strong>. Zorg er daarna voor dat elke paragraaf erboven een kopregel krijgt in verschillende groottes.
+
+<a name="lijsten"></a> Lijsten
+======
+
+Bij het maken van webpagina's zijn lijsten vaak erg handig. Ze geven je overzicht en structuur. Hieronder vind je een voorbeeld van een lijst in HTML:
+
+~~~
+<ul>
+  <li>Melk</li>
+  <li>Brood</li>
+  <li>Kaas</li>
+</ul>
+~~~
+
+<ul>
+  <li>Melk</li>
+  <li>Brood</li>
+  <li>Kaas</li>
+</ul>
+
+Er zijn een aantal verschillende typen lijsten. In dit hoofdstuk bespreken we er twee van. Dit zijn de __unordered list__ `<ul></ul>` en de __ordered list__ `<ol><\ol>`. Zoals je misschien al door hebt, heeft de unordered list geen nummering en de ordered list wel.
+Tussen deze lijst elementen worden altijd de __list items__ `<li></li>` geplaatst zoals in het voorbeeld hierboven.
+
+__Korte opdracht:__
+Maak een eigen lijst op je webpagina. Je kunt bijvoorbeeld een opsomming maken van al je verschillende spellen of films die je thuis hebt. Zorg dat je favoriete lijst items goed te zien zijn door de tekst bijvoorbeeld vetgedrukt of cursief te maken.
