@@ -27,7 +27,7 @@ Inhoudsopgave
 
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. [Basis](#css-basis)
-* Classes & ID's
+* [Classes & ID's](#classes)
 * Kleuren & Achtergronden
 * Teksten & fonts
 * Margin & padding
@@ -244,7 +244,8 @@ Maak een kleine tabel in je HTML bestand. Als je dit hebt gedaan kan je opzoeken
 <a name="css3"></a> CSS
 =====
 
-<a name="css-basis"></a>
+<a name="css-basis"></a> Basis
+=====
 
 CSS (Cascading Style Sheets) wordt gebruikt om de weergave van je HTML en webpagina aan te passen. Je kunt bijvoorbeeld de grootte van je tekst aanpassen, achtergrondkleuren instellen en HTML elementen verplaatsen. In de volgende hoofdstukken gaan we zoveel mogelijk in op de basis van het toevoegen van CSS aan je webpagina en aantal verschillende CSS eigenschappen.
 
@@ -256,6 +257,41 @@ We voegen hier twee verschillende attributen toe, namelijk het `rel` attribuut e
 
 __Korte opdracht:__
 Zorg ervoor dat je een nieuw CSS bestand aanmaakt in de map met je HTML bestand. Zet daarna correct de `<link>` tag tussen je `<head>` tags.
+
+<a name="classes"></a> Classes & ID's
+=====
+
+Om goed gebruik te kunnen maken van CSS moeten we weten wat classes & ID's zijn.
+Classes en ID's kunnen we aan HTML elementen koppelen met een attribuut. Dit gebeurt met de eigenschappen `class` en `id`. Het verschil tussen deze twee attributen is dat een class meerdere keren mag voorkomen op een pagina en een ID maar één keer voorkomt op een pagina.
+
+We kunnen in ons CSS bestand een class toevoegen als volgt:
+
+`.rood`
+
+We gebruiken een punt voor de classnaam om aan te geven dat het om een class gaat. Een classnaam kan je altijd zelf bepalen. Vervolgens kunnen we aan deze class eigenschappen toekennen. Om dat te doen moeten we deze CSS eigenschappen tussen __{__ en __}__ tekens plaatsen, dat ziet er zo uit:
+
+~~~
+/* Dit is een class */
+.rood {
+  color: red;
+}
+
+/* Dit is een ID */
+#geel {
+  color: yellow;
+}
+~~~
+
+Eerst kies je de eigenschap die je wil gebruiken. Na de naam van de eigenschap dat je wil gebruiken zet je een __:__ en volgt daarna de waarde die je wil gebruiken. Uiteindelijk sluit je de regel af met een __;__. In dit voorbeeld hierboven veranderen we de kleur van tekst naar rood van elk HTML element dat de class __rood__ heeft. Die voegen we met een attribuut toe aan een HTML tag net zoals hieronder.
+
+`<strong class="rood">Dit is rode vetgedrukte tekst</strong>`
+
+Voor ID's kunnen we hetzelfde doen als voor een class. Alleen gebruiken we in plaats van een __.__ een __#__.
+
+`<strong id="geel">Dit is een gele vetgedrukte tekst</strong>`
+
+__Korte opdracht:__
+Zoek op internet wat de verschillen zijn tussen classes en ID's en welke je beter kan gebruiken.
 
 <a name="opdrachten"></a> Opdrachten
 =====
