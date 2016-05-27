@@ -16,7 +16,7 @@ Inhoudsopgave
 * [Lijsten](#lijsten)
 * [Links](#links)
 * [Plaatjes](#plaatjes)
-* Tabellen
+* [Tabellen](#tabellen)
 * Formulieren
 * Meta informatie
 * Structuur & Semantiek
@@ -186,6 +186,57 @@ Zoek een leuk plaatje van het internet en download deze naar je eigen computer. 
 
 <a name="tabellen"></a> Tabellen
 ======
+
+Tabellen zijn een goede oplossing als je veel informatie op je website wil zetten.
+Een tabel maak je met het HTML element `<table>`. Hieronder zie je een voorbeeld:
+
+~~~
+  <table>
+  <tr>
+    <td><b>Datum</b></td>
+    <td><b>Tijd</b></td>
+    <td><b>Locatie</b></td>
+    <td><b>Wat</b></td>
+  </tr>
+  <tr>
+    <td>28-05-2016</td>
+    <td>11:00</td>
+    <td>Bibliotheek Tiel</td>
+    <td>HTML/CSS</td>
+  </tr>
+  <tr>
+    <td>25-06-2016</td>
+    <td>11:00</td>
+    <td>Bibliotheek Tiel</td>
+    <td>HTML/CSS</td>
+  </tr>
+  </table>
+~~~
+
+<table>
+<tr>
+  <td><b>Datum</b></td>
+  <td><b>Tijd</b></td>
+  <td><b>Locatie</b></td>
+  <td><b>Wat</b></td>
+</tr>
+<tr>
+  <td>28-05-2016</td>
+  <td>11:00</td>
+  <td>Bibliotheek Tiel</td>
+  <td>HTML/CSS</td>
+</tr>
+<tr>
+  <td style="border: 2px solid red" colspan="2">25-06-2016 om 11:00</td>
+  <td>Bibliotheek Tiel</td>
+  <td>HTML/CSS</td>
+</tr>
+</table>
+
+Een tabel bestaat uit rijen en kolommen. In HTML maak je eerst een rij met een `<tr>` element, daarna voeg je daartussen je tabel cellen toe met de `<td>` elementen. Dit worden je kolommen. Zorg ervoor dat je evenveel tabel cellen hebt per rij.
+
+__Korte opdracht:__
+Maak een kleine tabel in je HTML bestand. Als je dit hebt gedaan kan je opzoeken hoe je een tabel cel over 2 cellen kan laten lopen zoals het voorbeeld hierboven.
 
 <a name="opdracht1"></a> Opdracht 1:
 ======
