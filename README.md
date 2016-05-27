@@ -15,7 +15,7 @@ Inhoudsopgave
 * [Teksten](#teksten)
 * [Lijsten](#lijsten)
 * [Links](#links)
-* Plaatjes
+* [Plaatjes](#plaatjes)
 * Tabellen
 * Formulieren
 * Meta informatie
@@ -187,8 +187,26 @@ Zoek een leuk plaatje van het internet en download deze naar je eigen computer. 
 <a name="tabellen"></a> Tabellen
 ======
 
-<a name="opdracht1"></a> Opdracht 1
+<a name="opdracht1"></a> Opdracht 1:
 ======
+Maak een lijst met links naar je favoriete pagina's
+------
+
+Voor de eerste opdracht maken we een nieuw HTML bestand aan. Maak hiervoor een nieuwe map aan.
+
+Zorg ervoor dat je de hoofdstukken 1 t/m 4 hebt gelezen van het HTML onderdeel. Deze hoofdstukken geven uitleg over hoe je de elementen moet gebruiken.
+Hieronder staat een stappenplan die je kan volgen om de opdracht te maken.
+
+- Bouw eerst je basis HTML structuur op.
+- Voeg dan een titel toe aan je pagina. Kies een goede omschrijving voor wat er op de pagina komt te staan.
+- Voeg een kopregel toe en een korte paragraaf die omschrijft waar je lijstje over gaat.
+- Maak een nieuw lijstje aan onder de paragraaf. Kies bijvoorbeeld een aantal leuke websites uit.
+- De leukste items in je lijst geef je een vetgedrukte tekst.
+- Maak nu alle lijst items klikbaar in je pagina en geef er een aantal een target.
+- Als je klaar bent kijk je of je links werken. Wat valt je op als je een link heb bezocht en je opent opnieuw je webpagina?
+
+!["Opdracht 1 eindresultaat"](examples/images/example1.png)
+
 
 <a name="opdracht2"></a> Opdracht 2
 ======
