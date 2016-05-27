@@ -8,7 +8,7 @@ Inhoudsopgave
 
 * [Voorwoord](#voorwoord)
 
-## HTML5
+## [HTML5](#html5)
 
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. [Basis structuur](#basis-structuur)
@@ -23,10 +23,10 @@ Inhoudsopgave
 * HTML5 elementen
 * Referentie
 
-## CSS3
+## [CSS3](#css3)
 
 <!-- TODO Toevoegen van links naar de juiste headings -->
-1. Basis
+1. [Basis](#css-basis)
 * Classes & ID's
 * Kleuren & Achtergronden
 * Teksten & fonts
@@ -36,7 +36,7 @@ Inhoudsopgave
 * Basis effecten & animaties
 
 
-## Opdrachten
+## [Opdrachten](#opdrachten)
 <!-- TODO Toevoegen van links naar de juiste headings -->
 * [Opdracht 1](#opdracht1): Maak een lijst met links naar je favoriete pagina's   
   * <sub>Hoofdstukken 1 t/m 4 van HTML</sub>
@@ -64,6 +64,9 @@ Welkom bij deze basis tutorial voor het leren van HTML & CSS. Deze tutorial is s
 Voel je vrij om stukken over te nemen, uit te breiden en/of te verbeteren.
 
 Veel plezier met het leren van HTML & CSS!
+
+<a name="html5"></a> HTML5
+======
 
 
 <a name="basis-structuur"></a> Basis structuur
@@ -238,8 +241,27 @@ Een tabel bestaat uit rijen en kolommen. In HTML maak je eerst een rij met een `
 __Korte opdracht:__
 Maak een kleine tabel in je HTML bestand. Als je dit hebt gedaan kan je opzoeken hoe je een tabel cel over 2 cellen kan laten lopen zoals het voorbeeld hierboven.
 
+<a name="css3"></a> CSS
+=====
+
+<a name="css-basis"></a>
+
+CSS (Cascading Style Sheets) wordt gebruikt om de weergave van je HTML en webpagina aan te passen. Je kunt bijvoorbeeld de grootte van je tekst aanpassen, achtergrondkleuren instellen en HTML elementen verplaatsen. In de volgende hoofdstukken gaan we zoveel mogelijk in op de basis van het toevoegen van CSS aan je webpagina en aantal verschillende CSS eigenschappen.
+
+Eerst gaan we een nieuw CSS bestand aanmaken in dezelfde map als je HTML bestand. Deze kunnen we bijvoorbeeld __style.css__ noemen. We gaan deze daarna in je HTML bestand invoegen. Dit gebeurt met een `<link>` tag die je in de `<header>` zet. Het CSS bestand wordt dan op de pagina ingeladen. Het voordeel van deze manier van toevoegen van CSS is dat je niet voor elke pagina weer dezelfde CSS hoeft toe te voegen.
+
+`<link rel="stylesheet" href="style.css" >`
+
+We voegen hier twee verschillende attributen toe, namelijk het `rel` attribuut en `href`. De `rel` eigenschap moet aanwezig zijn op de tag, hier geef je mee aan dat het om een Style Sheet gaat. Met `href` geef je aan waar het bestand staat.
+
+__Korte opdracht:__
+Zorg ervoor dat je een nieuw CSS bestand aanmaakt in de map met je HTML bestand. Zet daarna correct de `<link>` tag tussen je `<head>` tags.
+
+<a name="opdrachten"></a> Opdrachten
+=====
+
 <a name="opdracht1"></a> Opdracht 1:
-======
+=====
 Maak een lijst met links naar je favoriete pagina's
 ------
 
@@ -259,8 +281,19 @@ Hieronder staat een stappenplan die je kan volgen om de opdracht te maken.
 !["Opdracht 1 eindresultaat"](examples/images/example1.png)
 
 
-<a name="opdracht2"></a> Opdracht 2
-======
+<a name="opdracht2"></a> Opdracht 2:
+=====
+Maak een tabel die de Eredivisie statistieken toont
+-----
+
+Voor deze opdracht gaan we gebruik maken van tabellen en plaatjes (Hoofdstuk 5 & 6 van HTML). Je kan een nieuw HTML bestand aanmaken of doorgaan op het bestand dat je in [Opdracht 1](#opdracht1) hebt gemaakt.
+
+Ga naar de site http://www.eredivisie.nl en bekijk de huidige stand. Deze kan je (voor een deel) overnemen voor je eigen tabel (of je verzint zelf wat voor in je eigen tabel). Hieronder staat een stappenplan die kan gebruiken voor het maken van je tabel:
+
+- Bedenk hoe de structuur wordt van je tabel. Hoeveel rijen en kolommen heb je nodig?
+- Voeg de structuur toe in je HTML, je kan gebruik maken van kopieëren en plakken om het wat te versnellen.
+- Vul daarna je tabel cellen met alle informatie (je kan ook de plaatjes van de clubs downloaden en toevoegen bijvoorbeeld).
+- Zet om de plaatjes een link heen naar de site van de voetbalclub.
 
 <a name="opdracht3"></a> Opdracht 3
-======
+=====
