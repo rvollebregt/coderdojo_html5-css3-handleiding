@@ -150,7 +150,7 @@ Maak een eigen lijst op je webpagina. Je kunt bijvoorbeeld een opsomming maken v
 <a name="links"></a> Links
 ======
 
-Op je pagina is het natuurlijk leuk als je naar andere websites of één van je andere pagina's kan verwijzen. Dit kunnen we doen met links of knoppen.
+Op je pagina is het natuurlijk leuk als je naar mensen naar andere websites of één van je andere pagina's kan sturen. Dit kunnen we doen met links.
 Een link kunnen we maken door het `<a></a>` element te gebruiken (`<a>` is een afkorting voor anchor).
 
 Om een link te maken kunnen we een stuk tekst omringen met deze tags. Alleen moeten we ook aan deze tag kunnen vertellen waar de link naar toe moet verwijzen. Om dat voor elkaar te krijgen kunnen we een eigenschap toevoegen aan de openende tag. Dit heet een __attribute__. Voor deze tag gaan we het __href__ attribuut gebruiken. Dat ziet er zo uit:
@@ -165,3 +165,33 @@ Deze manier geldt voor het toevoegen van alle beschikbare attributen. Vaak hebbe
 
 __Korte opdracht:__
 Voeg in je tekst een link toe naar een website die je vaak bezoekt. Zoek ook op internet op waar de __target__ attribuut voor is bij de `<a>` tag en voeg deze op de juiste manier toe aan je link.
+
+<a name="plaatjes"></a> Plaatjes
+======
+Een website is natuurlijk niet interessant zonder plaatjes. Met HTML kunnen we heel gemakkelijk onze eigen afbeeldingen toevoegen met de `<img>` tag.
+Dit is een HTML element die maar één tag gebruikt. Om een plaatje toe te voegen moeten we het `src` attribuut gebruiken ('source', vertaald naar het Nederlands is dat 'bron'). Hieronder zie je een voorbeeld:
+
+`<img src="afbeelding1.jpg">`
+
+!["Dit is een afbeelding"](images/afbeelding1.jpg)
+
+Het pad van de afbeelding wordt altijd gezien vanuit de map waar je HTML bestand staat. Dat betekent dat als je plaatje in de map __images__ staat, dat je als pad `images/afbeelding1.jpg` gebruikt om deze te laden.
+
+!["Screenshot mappenstructuur"](images/afbeelding2.png)
+
+Browsers ondersteunen een aantal verschillende soorten bestandsformaten. De meest voorkomende bestandsformaten zijn __.png__, __.jpg__ en __.gif__.
+
+__Korte opdracht:__
+Zoek een leuk plaatje van het internet en download deze naar je eigen computer. Vervolgens plaats je het plaatje bij je HTML bestand in een nieuwe folder (gebruikelijk is om de folder __images__ te noemen). Voeg nu een nieuwe `<img>` tag toe in je HTML bestand. Probeer ook uit te vinden welk attribuut je kan gebruiken om je plaatje een titel te geven.
+
+<a name="tabellen"></a> Tabellen
+======
+
+<a name="opdracht1"></a> Opdracht 1
+======
+
+<a name="opdracht2"></a> Opdracht 2
+======
+
+<a name="opdracht3"></a> Opdracht 3
+======
