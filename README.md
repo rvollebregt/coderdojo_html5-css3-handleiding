@@ -39,14 +39,12 @@ Inhoudsopgave
 ## [Opdrachten](#opdrachten)
 <!-- TODO Toevoegen van links naar de juiste headings -->
 * [Opdracht 1](#opdracht1): Maak een lijst met links naar je favoriete pagina's   
-  * <sub>Hoofdstukken 1 t/m 4 van HTML</sub>
-
-
+  * <small>Hoofdstukken 1 t/m 4 van HTML</small>
 * [Opdracht 2](#opdracht2): Maak een tabel die de Eredivisie statistieken toont
-  * <sub>Hoofdstuk 5 & 6 van HTML</sub>
-
-
-* Opdracht ?: Maak een menu die openklapt
+  * <small>Hoofdstuk 5 & 6 van HTML</small>
+* [Opdracht 3](#opdracht3): Voeg kleur toe aan je lijst met links van Opdracht 1
+  * <small>Hoofdstuk 1 t/m 3 van CSS</small>
+<!-- * Opdracht ?: Maak een menu die openklapt -->
 
 
 Links met extra informatie
@@ -365,3 +363,12 @@ Ga naar de site http://www.eredivisie.nl en bekijk de huidige stand. Deze kan je
 
 <a name="opdracht3"></a> Opdracht 3
 =====
+
+Gebruik voor deze opdracht het resultaat van Opdracht 1. Deze kunnen we nu verder uitbreiden met kleuren.
+
+- Maak een class aan voor de achtergrondkleur en tekstkleur van je body. Voeg deze daarna toe in je HTML.
+- De kleur van je links veranderen niet, deze hebben al een andere kleur door je browser gekregen. Maak een aparte class aan die je op je links kan gebruiken en verander de tekst- en achtergrondkleur.
+- Geef ook je __unordered list__ een ander kleurtje, je zult zien dat de bolletjes voor de links van kleur veranderen.
+- Extra: kan je ook alle links in één keer veranderen van kleur zonder elke link een class te geven? Hoe kan je dit voor elkaar krijgen?
+
+!["Opdracht 3 afbeelding"](examples/images/example3.png)
