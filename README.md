@@ -28,7 +28,7 @@ Inhoudsopgave
 <!-- TODO Toevoegen van links naar de juiste headings -->
 1. [Basis](#css-basis)
 * [Classes & ID's](#classes)
-* Kleuren & Achtergronden
+* [Kleuren & Achtergronden](#kleuren)
 * Teksten & fonts
 * Margin & padding
 * Positionering
@@ -292,6 +292,38 @@ Voor ID's kunnen we hetzelfde doen als voor een class. Alleen gebruiken we in pl
 
 __Korte opdracht:__
 Zoek op internet wat de verschillen zijn tussen classes en ID's en welke je beter kan gebruiken.
+
+<a name="kleuren"></a> Kleuren & Achtergronden
+=====
+
+Nu we hebben geleerd hoe je classes en ID's kan gebruiken, kunnen we de echte eigenschappen van CSS bekijken en toevoegen.
+We maken eerst een nieuwe class aan in het CSS bestand.
+
+~~~
+.blauw {}
+~~~
+
+Om de kleur van tekst te kunnen aanpassen, gebruiken we de eigenschap `color`. Ook kunnen we de kleur van de achtergrond aanpassen. Hier gebruiken we `background-color` voor.
+
+~~~
+.blauw {
+  color: white;
+  background-color: blue;
+}
+/* Let op: we sluiten een CSS regel altijd af met een ; */
+~~~
+
+Met deze CSS class kunnen we nu de achtergrond blauw maken en de kleur van de tekst wit. Deze class kan je aan een element van je HTML pagina toevoegen.
+
+`<h1 class="blauw">Dit is een Header met een blauwe achtergrond</h1>`
+
+__Korte opdracht:__
+Voeg een class toe aan je CSS bestand. Gebruik je gemaakte class op een HTML element naar keuze. Als je het goed hebt gedaan krijg je nu een blauw blok met witte tekst te zien.
+
+Let op: Als je CSS niet werkt, controleer dan of je CSS bestand in je `<head>` is ingevoegd en of je CSS regels met een __;__ zijn afgesloten.
+
+Zoek op internet op welke andere kleuren je kan gebruiken in je CSS. Er zijn meerdere kleuren beschikbaar die je met hun naam kan toevoegen, zoals `red, black, grey` etc. Maar we kunnen ook zelf een kleur maken met het RGB-kleursysteem. Je kan [hier](https://nl.wikipedia.org/wiki/RGB-kleursysteem) meer info vinden er over.
+
 
 <a name="opdrachten"></a> Opdrachten
 =====
