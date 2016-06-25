@@ -400,9 +400,83 @@ Hieronder volgt een lijstje van eigenschappen waarmee je je tekst kan aanpassen:
 <a name="margin"></a> Margin & Padding
 =====
 
+HTML elementen kunnen we voorzien van marges en van padding. Marge is de afstand die een element moet hebben ten opzichte van een ander element. Padding is de afstand aan de binnenkant van een element tot de tekst of een ander element.
 
-<a name="positionering"></a> Positionering
+Onderstaand plaatje geeft een goed beeld van hoe margin en padding werkt op een element (het rode blok):
+!["Margin en padding"](images/afbeelding3.png)
+
+<a name="positionering"></a> Positionering en display
 =====
+Positionering van HTML elementen is één van de lastigere onderwerpen van CSS. Er zijn vaak meerdere oplossingen om een bepaald resultaat te halen. We beginnen met het uitleggen van de `display` en `position` eigenschappen in CSS.
+
+### Display
+
+Met het `display` eigenschap geef je aan wat voor type jouw HTML element is. Zo wordt voor bijvoorbeeld tekst standaard het `display: inline;` gebruikt. Dit zorgt er voor dat tekst altijd naast elkaar wordt getoond. Ook een `<span>` element heeft standaard `display: inline;` als eigenschap. Inline toont elementen naast elkaar, tot de beschikbare ruimte in een element op is (bijvoorbeeld het einde van je browserscherm) en gaat dan op de volgende regel verder.
+
+Voorbeeld:
+~~~
+<span>Deze tekst staat </span>
+<span>naast elkaar</span>
+~~~
+
+<span>Deze tekst staat </span>
+<span>naast elkaar</span>
+
+Er zijn op `inline` nog een aantal varianten zoals `inline-block`. Deze eigenschap kunnen we gebruiken als we 'block' elementen naast elkaar willen zetten.
+
+Let op dat als je elementen naast elkaar wil zetten, dat alle elementen `display: inline` of `display: inline-block` als eigenschap hebben!
+
+Zoals hierboven genoemd hebben we ook `block` elementen. Dit zijn bijvoorbeeld `<p>` en `<div>` tags. Deze elementen gedragen zich als blokken. We kunnen hier een breedte en hoogte aan meegeven en ook margin en padding. Deze blokken komen standaard onder elkaar te staan. We kunnen een `block` element wel naast elkaar weergeven door er een `inline-block` van te maken, zoals we hierboven hebben besproken.
+
+Verder hebben we nog een `display: none;` eigenschap, deze zorgt er voor dat we het element niet meer kunnen zien. Het lijkt misschien niet handig deze CSS regel, maar we zullen deze nog vaak terug zien komen!
+
+Hier kun je kijken hoe een element zich gedraagt met de verschillende soorten display eigenschappen:
+http://www.w3schools.com/cssref/playit.asp?filename=playcss_display&preval=inline
+
+### Positie
+
+Een element kunnen we ook verplaatsen met het `position` eigenschap. Er zijn vier verschillende typen `position` die we kunnen gebruiken:
+
+* static (standaard op elk element)
+* relative
+* fixed
+* absolute
+
+Nadat we 1 van deze eigenschappen hebben gekozen (behalve static), kunnen we met `top, bottom, left, right` de positie bepalen.
+
+Het `position: static;` komt standaard voor op elementen, helaas kunnen we met deze vorm `top, bottom, left, right` niet gebruiken en moeten we dus een van de andere vormen gebruiken willen we een verplaatsing doen.
+
+#### Relative
+
+__Relative__ zegt het eigenlijk al: het element staat relatief ten opzichte van andere elementen. Als een `<p>` tag onder een andere `<h1>` tag staat in de HTML, zie je dit ook zo op het scherm. Het verschil met `position: static;` is dat we dit element kunnen verplaatsen. We kunnen bijvoorbeeld door `top: 10px;` het item 10 pixels __naar beneden__ verplaatsen. Het verplaatsen werkt namelijk als een soort marge. We kunnen ook negatieve waarden gebruiken als we een element de andere kant op willen verplaatsen.
+
+Zo gebruiken we `right: -10px` om een element 10 pixels naar rechts te verschuiven van zijn huidige positie.
+
+~~~
+#relatief {
+    position: relative;
+    top: -30px;
+    right: 20px;
+}
+~~~
+
+#### Absolute
+
+Met `position: absolute;` kunnen we het element absoluut positioneren ten opzichte van een ander element. Hiervoor zijn wel een belangrijke regel om te onthouden:
+
+* Een absoluut gepositioneerd element valt altijd binnen de grenzen van een bovenstaand element die de eigenschap `position: relative;` heeft. Als er geen zijn, dan is dit de gehele pagina.
+
+Als we voor een absoluut gepositioneerd element `top: 50px;` instellen, zal deze dus op 50 pixels afstand van de bovenkant van het voorgaande element staan. Een voorbeeld:
+!["Position absolute"](images/afbeelding4.png)
+Hier hebben we `top: 50px;` en `left: 20px;` toegepast op een absoluut gepositioneerd element. Andere voorbeelden zijn hier te vinden: http://www.w3schools.com/css/css_positioning.asp
+
+#### Fixed
+
+Als laatst hebben we nog het `position: fixed;` eigenschap. Deze werkt op de meeste punten gelijk aan `position: absolute;`. Alleen wordt bij fixed altijd je browser scherm gebruikt als uitgangspunt. Als je dus bij een fixed element `bottom: 0;` instelt, zal deze altijd onderaan in beeld blijven staan.
+
+__Korte opdracht:__ Maak een menu met links zoals we in een van de vorige opdrachten hebben gedaan. Deze willen we nu altijd zichtbaar in beeld hebben. Nadat je het menu hebt aangepast, maak je twee kolommen met `<div>` elementen. In de kolommen kun je tekst en plaatjes toevoegen. Zorg ervoor dat ze netjes naast elkaar staan.
+__Extra:__ Maak de 2 kolommen kleiner en zet deze in het midden van je pagina. (hint: gebruik een 'wrapper' en margin om dit op te lossen). Als je er niet uit komt kan je nog op Google rondzoeken of even om hulp vragen.
+
 
 <a name="selectors"></a> Basis selectors
 =====
