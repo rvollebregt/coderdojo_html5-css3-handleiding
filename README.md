@@ -29,11 +29,11 @@ Inhoudsopgave
 1. [Basis](#css-basis)
 * [Classes & ID's](#classes)
 * [Kleuren & Achtergronden](#kleuren)
-* Teksten & fonts
-* Margin & padding
-* Positionering
-* Basis selectors
-* Basis effecten & animaties
+* [Teksten & fonts](#teksten)
+* [Margin & padding](#margin)
+* [Positionering](#positionering)
+* [Basis selectors](#selectors)
+* [Basis effecten & animaties](#effecten)
 
 
 ## [Opdrachten](#opdrachten)
@@ -322,6 +322,93 @@ Let op: Als je CSS niet werkt, controleer dan of je CSS bestand in je `<head>` i
 
 Zoek op internet op welke andere kleuren je kan gebruiken in je CSS. Er zijn meerdere kleuren beschikbaar die je met hun naam kan toevoegen, zoals `red, black, grey` etc. Maar we kunnen ook zelf een kleur maken met het RGB-kleursysteem. Je kan [hier](https://nl.wikipedia.org/wiki/RGB-kleursysteem) meer info vinden er over.
 
+<a name="teksten"></a> Teksten & fonts
+=====
+
+Een website bestaat vaak voor een groot gedeelte uit tekst. Je wil op je website meestal informatie overbrengen aan anderen en daar is tekst natuurlijk erg geschikt voor. Met CSS kunnen we deze teksten op allerlei manieren aanpassen.
+Één van de simpelste CSS regels zijn we al tegengekomen, namelijk `color`.
+
+Natuurlijk zijn er nog veel meer verschillende aanpassingen mogelijk. Later bespreken we een aantal van deze eigenschappen.
+
+Allereerst is het belangrijk dat we gebruik kunnen maken van andere lettertypes. We zullen hiervoor gebruik gaan maken van Google Fonts, omdat deze gemakkelijk te gebruiken zijn en er erg veel keus is.
+
+Open in je browser de URL http://www.google.com/fonts. Hier kies je een mooi lettertype uit en klik je op __Add to Collection__. Dit lettertype wordt dan toegevoegd. Nu kunnen we onderin op de knop __Use__ klikken.
+Als je dat hebt gedaan, krijg je een `<link>` tag te zien, die je kan toevoegen aan je website. Deze moet je tussen je `<head>` tags zetten. Deze link tag zorgt er voor dat je browser weet waar hij het lettertype moet downloaden. Als je dat hebt gedaan, kunnen we in ons CSS bestand de `font-family` code toevoegen aan het body element.
+
+~~~
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+~~~
+
+Als je dan de pagina herlaadt nadat je de HTML en CSS bestanden hebt opgeslagen, zie je dat je lettertype is ingeladen!
+We kunnen de teksten ook je pagina ook aanpassen op andere manier. We hebben al eerder met HTML gewerkt om teksten *cursief* of bijvoorbeeld **vetgedrukt** te maken. Natuurlijk kunnen we dit ook met CSS regelen, en dat is dan ook de beste manier van werken. We willen dat CSS al het uiterlijk verzorgt en dat HTML alleen de structuur en semantiek voor zijn rekening neemt.
+
+Hieronder volgt een lijstje van eigenschappen waarmee je je tekst kan aanpassen:
+
+* Lettertype grootte
+  * Met `font-size` kun je de grootte van je tekst aanpassen. Dit doen we voor nu in pixels.
+  ~~~
+  p {
+      font-size: 18px;
+  }
+  ~~~
+* Lettertype stijl
+  * We kunnen `font-style` gebruiken om tekst cursief te maken.
+  ~~~
+  h2 {
+      font-style: italic;
+  }
+  ~~~
+* Lettertype gewicht
+  * Om een tekst vetgedrukt te maken, gebruiken we `font-weight`.
+  ~~~
+  span {
+      font-weight: bold;
+  }
+  ~~~
+
+* Tekstkleur
+  * Voor de kleur gebruiken we het `color` eigenschap.
+  ~~~
+  h3 {
+      color: #FFFF00;
+  }
+  ~~~
+
+* Tekst uitlijning
+  * Tekst kunnen we bijvoorbeeld links, rechts of in het midden uitlijnen ten opzichte van het element waar het in staat. Hier kunnen we `text-align` voor gebruiken.
+  ~~~
+  div {
+      text-align: right;
+  }
+  ~~~
+
+* Tekst transformeren
+  * We kunnen van tekst ook veranderen of deze bijvoorbeeld in hoofdletters of kleine letters wordt weergegeven
+  ~~~
+  section {
+      text-transform: uppercase;
+  }
+  ~~~
+
+  Verder zijn er nog meer eigenschappen, alleen worden deze een stuk minder gebruikt dan de eigenschappen die we hierboven hebben genoemd. Je kan ze zelf opzoeken op http://www.w3schools.com/css/css_font.asp en op http://www.w3schools.com/css/css_text.asp
+
+  __Korte opdracht:__
+  Maak een nieuwe HTML pagina aan en voeg daar wat tekst aan toe (bijvoorbeeld een stukje tekst over je favoriete film). Zorg ervoor dat je deze opdeelt in paragrafen en kopregels (gebruik verschillende tags hiervoor, zoals `h1` en `h2`). Geef je kopregels verschillende groottes die anders zijn dan de standaard groottes. Zorg er voor dat je kopregels ook een ander lettertype krijgen dan de paragrafen. Je kan weer op Google Fonts een mooi lettertype uitzoeken hiervoor.
+
+<a name="margin"></a> Margin & Padding
+=====
+
+
+<a name="positionering"></a> Positionering
+=====
+
+<a name="selectors"></a> Basis selectors
+=====
+
+<a name="effecten"></a> Basis effecten & animaties
+=====
 
 <a name="opdrachten"></a> Opdrachten
 =====
