@@ -462,7 +462,7 @@ Zo gebruiken we `right: -10px` om een element 10 pixels naar rechts te verschuiv
 
 #### Absolute
 
-Met `position: absolute;` kunnen we het element absoluut positioneren ten opzichte van een ander element. Hiervoor zijn wel een belangrijke regel om te onthouden:
+Met `position: absolute;` kunnen we het element absoluut positioneren ten opzichte van een ander element. We moeten wel een belangrijke regel onthouden:
 
 * Een absoluut gepositioneerd element valt altijd binnen de grenzen van een bovenstaand element die de eigenschap `position: relative;` heeft. Als er geen zijn, dan is dit de gehele pagina.
 
@@ -477,9 +477,53 @@ Als laatst hebben we nog het `position: fixed;` eigenschap. Deze werkt op de mee
 __Korte opdracht:__ Maak een menu met links zoals we in een van de vorige opdrachten hebben gedaan. Deze willen we nu altijd zichtbaar in beeld hebben. Nadat je het menu hebt aangepast, maak je twee kolommen met `<div>` elementen. In de kolommen kun je tekst en plaatjes toevoegen. Zorg ervoor dat ze netjes naast elkaar staan.
 __Extra:__ Maak de 2 kolommen kleiner en zet deze in het midden van je pagina. (hint: gebruik een 'wrapper' en margin om dit op te lossen). Als je er niet uit komt kan je nog op Google rondzoeken of even om hulp vragen.
 
-
 <a name="selectors"></a> Basis selectors
 =====
+
+Er zijn heel veel verschillende mogelijkheden om HTML elementen te kunnen selecteren met CSS selectors. We bespreken de meest voorkomende en meest handige selectors hieronder.
+
+We hebben natuurlijk al eerder kennis gemaakt met classes en id's en het gebruik van de HTML tagnaam zelf zoals `p`. Classes worden met een `.` (punt) aangeduid en id's met een `#` (hekje). De namen van deze classes of id's mag je zelf bepalen. Deze zet je vervolgens op je HTML tag.
+Classes mag je meerdere keren gebruiken, id's mag je maar 1x per HTML pagina gebruiken.
+
+We kunnen een CSS selector op heel veel verschillende manieren opbouwen met deze 3 basisblokken.
+Om de mogelijkheden begrijpelijk te maken, hebben we een aantal voorbeelden met daarbij een korte uitleg:
+
+~~~
+.rood
+~~~
+Hiermee selecteren we alle HTML tags die class `rood` hebben.
+
+~~~
+.rood.vetgedrukt
+~~~
+Als we nog een class hier achter zetten, selecteren we alleen de HTML tags die de class __rood__ EN __geel__ hebben.
+
+`<p class="rood vetgedrukt">Rood vet gedrukt</p>`
+
+~~~
+.rood .vetgedrukt
+~~~
+Als we een class er achter zetten met ook een spatie tussen de classes, zorgt dat er voor dat alle HTML tags met de class `.vetgedrukt` worden aangesproken die ook een HTML tag bovenstaand hebben met als class `.rood`. Een voorbeeld:
+
+~~~
+<p class="rood">Dit is een rode <b class="vetgedrukt">tekst</b></p>
+~~~
+
+Deze voorbeelden kunnen we natuurlijk ook meerdere keren toepassen. Je mag zoveel classes achter elkaar zetten als je wil. Ook kun je in plaats van classes id's of elementen gebruiken.
+Zo kunnen we met `p.rood` alle paragrafen aanspreken die de class `.rood` hebben
+
+We kunnen ook meerdere losse elementen of classes tegelijk voorzien van CSS regels. Dit kunnen we doen door de elementen, classes of id's met een komma te scheiden van elkaar.
+
+~~~
+div, span, p
+~~~
+
+Natuurlijk zijn er nog een heel aantal andere selectors te gebruiken. Deze zullen we in een ander hoofdstuk behandelen waar we verder op selectors in gaan.
+
+Voor een uitgebreider overzicht kan je op deze link kijken:
+http://www.w3schools.com/cssref/css_selectors.asp
+
+__Korte opdracht:__ Bekijk en omschrijf wat de verschillen zijn tussen `div p`, `div > p` en `div + p`.
 
 <a name="effecten"></a> Basis effecten & animaties
 =====
@@ -533,3 +577,32 @@ Gebruik voor deze opdracht het resultaat van Opdracht 1. Deze kunnen we nu verde
 - Extra: kan je ook alle links in één keer veranderen van kleur zonder elke link een class te geven? Hoe kan je dit voor elkaar krijgen?
 
 !["Opdracht 3 afbeelding"](examples/images/example3.png)
+
+<a name="opdracht-menu"></a> Menu Opdracht
+=====
+
+Om alles wat we tot nu toe geleerd hebben uit te proberen, maken we een dropdown menu die automatisch openklapt als je met je muis over een item heen gaat die sub-items heeft.
+
+De plaatjes hieronder zijn een voorbeeld van een menu dat je kan maken:
+
+!["Opdracht menu afbeelding"](examples/images/example-menu-1.png)
+
+!["Opdracht menu afbeelding"](examples/images/example-menu-2.png)
+
+Om een goed menu te kunnen maken, moet je goed bedenken hoe de HTML structuur moet worden.
+We kunnen voor de navigatie het `<nav></nav>` element gebruiken. Dit element is speciaal voor navigatie menu's. Binnen dit element maken we een lijst met menu items, zoals we al eerder hebben gedaan. Maar om een extra menu te maken onder één van de items, moeten we nog een lijst maken. Dat ziet er ongeveer zo uit:
+
+~~~
+<nav>
+  <ul>
+    <li>
+      <a href="http://www.mijnwebsite.com">Mijn website</a>
+      <ul>
+        <li><a href="http://www.mijnwebsite.com/fotos">Mijn foto's</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+~~~
+
+We hebben nu een lijstje gemaakt binnen een lijst item (onder de `<a></a>` tag). Deze lijst is standaard natuurlijk gewoon zichtbaar. Maak alle lijsten die onder een lijstitem vallen onzichtbaar met `display: none`.

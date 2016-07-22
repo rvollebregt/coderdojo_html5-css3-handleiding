@@ -1,0 +1,49 @@
+body {
+  background-color: #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  width: 800px;
+  margin: 20px auto;
+  background: #666;
+  border-radius: 4px;
+  padding: 2px 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation li {
+  vertical-align: top;
+  display: inline-block;
+  padding: 4px 10px;
+}
+
+.navigation li:hover > ul {
+  display: block;
+}
+
+.navigation li ul {
+  position: absolute;
+  display: none;
+  padding: 0;
+  background: #666;
+  border-radius: 4px;
+  padding: 16px 0;
+}
+
+.navigation li ul li {
+  display: block;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation a:hover {
+  color: blue;
+}
