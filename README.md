@@ -659,6 +659,6 @@ We kunnen voor de navigatie het `<nav></nav>` element gebruiken. Dit element is 
 We hebben nu een lijstje gemaakt binnen een lijst item `<li>` (en onder de `<a></a>` tag). Deze lijst is normaal natuurlijk gewoon zichtbaar. Zorg ervoor dat alle submenu's die onder een lijstitem vallen onzichtbaar zijn. Hier kan je voor zorgen door `display: none` te gebruiken.
 
 Het enige wat we nu moeten doen is er voor zorgen dat als we over een lijstitem gaan met onze muiscursor dat het menu dat we net verborgen hebben weer zichtbaar wordt.
-__Hint:__ gebruik hiervoor de parent selector.
+__Hint:__ gebruik hiervoor de parent selector en de :hover selector.
 
 Om het menu mooier te maken kan je de hoofdmenu items naast elkaar zetten met bijvoorbeeld `display: inline-block`. Let er wel op dat je onderliggende menu items nu waarschijnlijk ook naast elkaar staan. Dit willen we niet, en moeten we dus ongedaan maken. Met de juiste CSS selector combinatie kunnen we dit makkelijk oplossen. Bekijk goed de structuur om te bepalen hoe je deze CSS regel moet opstellen.
