@@ -523,7 +523,7 @@ Natuurlijk zijn er nog een heel aantal andere selectors te gebruiken. Deze zulle
 Voor een uitgebreider overzicht kan je op deze link kijken:
 http://www.w3schools.com/cssref/css_selectors.asp
 
-__Korte opdracht:__ Bekijk en omschrijf wat de verschillen zijn tussen `div p`, `div > p` en `div + p`.
+__Korte opdracht:__ Bekijk en omschrijf wat de verschillen zijn tussen `div p`, `div > p` en `div + p`. Een uitleg van de selectors kan je op de CSS selectors link bekijken of aan een van de mentors vragen.
 
 <a name="effecten"></a> Basis effecten & animaties
 =====
@@ -605,4 +605,9 @@ We kunnen voor de navigatie het `<nav></nav>` element gebruiken. Dit element is 
 </nav>
 ~~~
 
-We hebben nu een lijstje gemaakt binnen een lijst item (onder de `<a></a>` tag). Deze lijst is standaard natuurlijk gewoon zichtbaar. Maak alle lijsten die onder een lijstitem vallen onzichtbaar met `display: none`.
+We hebben nu een lijstje gemaakt binnen een lijst item `<li>` (en onder de `<a></a>` tag). Deze lijst is normaal natuurlijk gewoon zichtbaar. Zorg ervoor dat alle submenu's die onder een lijstitem vallen onzichtbaar zijn. Hier kan je voor zorgen door `display: none` te gebruiken.
+
+Het enige wat we nu moeten doen is er voor zorgen dat als we over een lijstitem gaan met onze muiscursor dat het menu dat we net verborgen hebben weer zichtbaar wordt.
+__Hint:__ gebruik hiervoor de parent selector.
+
+Om het menu mooier te maken kan je de hoofdmenu items naast elkaar zetten met bijvoorbeeld `display: inline-block`. Let er wel op dat je onderliggende menu items nu waarschijnlijk ook naast elkaar staan. Dit willen we niet, en moeten we dus ongedaan maken. Met de juiste CSS selector combinatie kunnen we dit makkelijk oplossen. Bekijk goed de structuur om te bepalen hoe je deze CSS regel moet opstellen.
