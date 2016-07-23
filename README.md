@@ -17,11 +17,11 @@ Inhoudsopgave
 * [Links](#links)
 * [Plaatjes](#plaatjes)
 * [Tabellen](#tabellen)
-* Formulieren
-* Meta informatie
+* [HTML5 Elementen](#html5)
 * Structuur & Semantiek
-* HTML5 elementen
+* Meta informatie
 * Referentie
+* Formulieren
 
 ## [CSS3](#css3)
 
@@ -238,6 +238,57 @@ Een tabel bestaat uit rijen en kolommen. In HTML maak je eerst een rij met een `
 
 __Korte opdracht:__
 Maak een kleine tabel in je HTML bestand. Als je dit hebt gedaan kan je opzoeken hoe je een tabel cel over 2 cellen kan laten lopen zoals het voorbeeld hierboven.
+
+<a name="html5"></a> HTML5 Elementen
+=====
+Sinds de komst van HTML versie 5 (HTML5) zijn er een aantal nieuwe tags toegevoegd die we kunnen gebruiken. Deze nieuwe elementen bieden tags om een betere semantiek te bieden voor je webpagina. Semantiek en waarom het belangrijk is bespreken we verder in het Semantiek hoofdstuk.
+
+Een lijstje met alle nieuwe HTML5 elementen kan je hier vinden:
+http://www.w3schools.com/html/html5_new_elements.asp
+
+Hieronder volgt een korte uitleg van de meest gebruikte nieuwe HTML5 tags.
+~~~
+<header></header>
+~~~
+Met de __header__ tag kunnen we aangeven dat het gaat om de kop van je website of van een article in je website (dit is een ander nieuw HTML5 element). Hier kan je bijvoorbeeld een logo inzetten en je navigatie menu.
+
+~~~
+<footer></footer>
+~~~
+De __footer__ tag wordt vaak gezien als het tegenovergestelde van de __header__ tag. Deze komt namelijk altijd onderin je pagina of aan het einde van een article. Deze gebruik je vaak om de pagina te voorzien van wat extra informatie. Vaak staan onderin adresgegevens en extra links.
+
+~~~
+<article></article>
+~~~
+Met een __article__ element geef je aan dat het om een los staand onderdeel op je site gaat. Bijvoorbeeld een artikel, blog post of een gebruiker comment.
+
+~~~
+<section></section>
+~~~
+Een __section__ tag markeert een deel van een groter onderdeel. Zo kun je deze onder een `<article></article>` element hangen.
+
+~~~
+<main></main>
+~~~
+Met dit element kunnen we aangeven dat het om de belangrijkste content gaat op onze website. Deze tag kunnen we mooi combineren met `<header></header>` en `<footer></footer>`.
+
+~~~
+<aside></aside>
+~~~
+Met __aside__ kunnen we aangeven dat het om een 'sidebar' gaat binnen de site of een article
+
+~~~
+<nav></nav>
+~~~
+Dit element spreekt eigenlijk voor zich, we kunnen hiermee een navigatie structuur aangeven (deze tag wordt dan ook alleen voor een lijst van links en niet voor losse links binnen de pagina).
+
+~~~
+<address></address>
+~~~
+Ook deze tag spreekt voor zich, we kunnen hiertussen een adres weergeven.
+
+Om extra te weten te komen over deze belangrijkste nieuwe HTML5 tags kun je deze link bekijken (in het Engels!):
+http://blog.teamtreehouse.com/use-html5-sectioning-elements
 
 <a name="css3"></a> CSS
 =====
