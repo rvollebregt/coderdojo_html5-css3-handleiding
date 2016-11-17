@@ -579,6 +579,38 @@ __Korte opdracht:__ Bekijk en omschrijf wat de verschillen zijn tussen `div p`, 
 <a name="effecten"></a> Basis effecten & animaties
 =====
 
+Met CSS kunnen we heel veel effecten en animaties gebruiken. We beginnen met een aantal makkelijke effecten zoals het veranderen van de kleur van tekst als je bijvoorbeeld met je muis eroverheen gaat.
+
+We maken eerst een nieuw HTML bestand aan. In de Atom tekst-editor kun je dit gemakkelijk doen door `html` in je nieuwe bestand te tikken en dan op enter te drukken. Op deze manier heb je de gehele structuur voor je pagina al klaar staan.
+
+~~~
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/example-effects.css" media="screen" title="no title">
+    <meta charset="utf-8">
+    <title>Effecten</title>
+  </head>
+  <body>
+    <h1>Dit is de link naar <a href="https://www.google.com">Google</a></h1>
+  </body>
+</html>
+~~~
+
+Vergeet niet de link tag naar je stylesheet toe te voegen. In de stylesheet gaan we in één keer alle `a` tags selecteren en de kleuren instellen. We kunnen met `:hover` de kleur veranderen als we over de link heen gaan met onze muiscursor.
+
+~~~
+a {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}
+~~~
+
+Nadat je dit hebt opgeslagen, kun je de link testen. Je zal zien dat deze van kleur verandert als je met je muis er over heen gaat. Dit is de belangrijkste basis van het maken van animaties en effecten. Je kunt natuurlijk heel veel eigenschappen veranderen, kleur is maar een simpel voorbeeld.
+
 <a name="opdrachten"></a> Opdrachten
 =====
 
