@@ -6,7 +6,7 @@ Een website kunnen we op veel manieren opbouwen. Als we geen structuur voor de s
 
 We gaan proberen een simpele website structuur op te bouwen. Hieronder zie je hoe het uiteindelijk er ongeveer uit moet gaan zien:
 
-!["Simpele website"](images/example-layout1.png)
+!["Simpele website"](../images/example-layout1.png)
 
 We hebben bovenin een simpele header met je website titel. Hier mag je ook een logo neerzetten als je dat leuk vindt.
 
